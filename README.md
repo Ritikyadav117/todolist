@@ -9,9 +9,10 @@ React + Tailwind frontend (`client`), Express + Mongoose API (`server`). On Netl
 ```bash
 npm install
 cp server/.env.example server/.env   # point MONGODB_URI at your MongoDB
-npm run dev:server                   # API on :5000
-npm run dev:client                   # app on :5173, /api is proxied to the API
+npm run dev                          # API on :5000 and app on :5173 together
 ```
+
+The app proxies `/api` to the API, so open http://localhost:5173.
 
 ## API
 
